@@ -1,185 +1,191 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" width="900" height="320"
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="900" height="300"
   role="img" aria-label="Harshit Singh — CSE Student | Data Science Enthusiast | AI/ML | Python">
-  <title>Harshit Singh</title>
+  <title>Harshit Singh — Premium GitHub Profile Banner</title>
   <defs>
-    <!-- ── Backgrounds ── -->
+
+    <!-- ── Static base background ── -->
     <linearGradient id="hh-bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%"   stop-color="#10070C"/>
-      <stop offset="40%"  stop-color="#190B12"/>
+      <stop offset="45%"  stop-color="#190B12"/>
       <stop offset="100%" stop-color="#10070C"/>
     </linearGradient>
 
-    <!-- Animated radial glow -->
-    <radialGradient id="hh-pulse" cx="50%" cy="52%" r="55%">
-      <stop offset="0%"   stop-color="#701A3D" stop-opacity="0.55">
-        <animate attributeName="stop-opacity" values="0.55;0.85;0.55" dur="4.5s" repeatCount="indefinite"/>
-        <animate attributeName="cx" values="50%;54%;50%" dur="9s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="70%"  stop-color="#451126" stop-opacity="0.1"/>
+    <!-- ── Radial wine glow — SMIL on the rect opacity (GitHub-safe) ── -->
+    <radialGradient id="hh-wine-glow" cx="50%" cy="50%" r="55%" gradientUnits="objectBoundingBox">
+      <stop offset="0%"   stop-color="#701A3D" stop-opacity="0.65"/>
+      <stop offset="60%"  stop-color="#451126" stop-opacity="0.18"/>
       <stop offset="100%" stop-color="#10070C" stop-opacity="0"/>
     </radialGradient>
 
-    <!-- Moving sweep light -->
-    <linearGradient id="hh-sweep" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"   stop-color="#E5B5C7" stop-opacity="0"/>
-      <stop offset="48%"  stop-color="#E5B5C7" stop-opacity="0.055"/>
-      <stop offset="52%"  stop-color="#E5B5C7" stop-opacity="0.08"/>
-      <stop offset="100%" stop-color="#E5B5C7" stop-opacity="0"/>
-      <animateTransform attributeName="gradientTransform" type="translate"
-        from="-1.2 0" to="1.2 0" dur="6s" repeatCount="indefinite"/>
-    </linearGradient>
+    <!-- ── Second, shifted radial for depth ── -->
+    <radialGradient id="hh-rose-glow" cx="30%" cy="40%" r="45%" gradientUnits="objectBoundingBox">
+      <stop offset="0%"   stop-color="#C77B9B" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#10070C" stop-opacity="0"/>
+    </radialGradient>
 
-    <!-- Underline glow -->
+    <!-- ── Underline gradient ── -->
     <linearGradient id="hh-ul" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%"   stop-color="#10070C"/>
-      <stop offset="30%"  stop-color="#C77B9B"/>
+      <stop offset="20%"  stop-color="#451126"/>
       <stop offset="50%"  stop-color="#E5B5C7"/>
-      <stop offset="70%"  stop-color="#C77B9B"/>
+      <stop offset="80%"  stop-color="#451126"/>
       <stop offset="100%" stop-color="#10070C"/>
     </linearGradient>
 
-    <!-- Filters -->
-    <filter id="hh-glow" x="-20%" y="-80%" width="140%" height="400%">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
+    <!-- ── Glow blur filter for underline & title bloom ── -->
+    <filter id="hh-glow-f" x="-30%" y="-200%" width="160%" height="600%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-    <filter id="hh-soft" x="-5%" y="-5%" width="110%" height="110%">
-      <feGaussianBlur stdDeviation="1.5"/>
-    </filter>
-    <filter id="hh-title-glow">
-      <feGaussianBlur stdDeviation="8" result="blur"/>
+    <filter id="hh-bloom" x="-5%" y="-40%" width="110%" height="180%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
 
-    <clipPath id="hh-clip"><rect width="900" height="320"/></clipPath>
+    <clipPath id="hh-clip"><rect width="900" height="300"/></clipPath>
   </defs>
 
   <g clip-path="url(#hh-clip)">
 
-    <!-- === BACKGROUND === -->
-    <rect width="900" height="320" fill="url(#hh-bg)"/>
-    <rect width="900" height="320" fill="url(#hh-pulse)"/>
-    <rect width="900" height="320" fill="url(#hh-sweep)"/>
+    <!-- ═══════════ BACKGROUND LAYERS ═══════════ -->
+    <rect width="900" height="300" fill="url(#hh-bg)"/>
 
-    <!-- === TECHNICAL GRID === -->
-    <g stroke="#C77B9B" stroke-width="0.4" opacity="0.08">
-      <line x1="0"   y1="80"  x2="900" y2="80"/>
-      <line x1="0"   y1="160" x2="900" y2="160"/>
-      <line x1="0"   y1="240" x2="900" y2="240"/>
-      <line x1="90"  y1="0"   x2="90"  y2="320"/>
-      <line x1="180" y1="0"   x2="180" y2="320"/>
-      <line x1="270" y1="0"   x2="270" y2="320"/>
-      <line x1="360" y1="0"   x2="360" y2="320"/>
-      <line x1="450" y1="0"   x2="450" y2="320"/>
-      <line x1="540" y1="0"   x2="540" y2="320"/>
-      <line x1="630" y1="0"   x2="630" y2="320"/>
-      <line x1="720" y1="0"   x2="720" y2="320"/>
-      <line x1="810" y1="0"   x2="810" y2="320"/>
+    <!-- Pulsing wine glow rect — SMIL on opacity is GitHub-safe -->
+    <rect width="900" height="300" fill="url(#hh-wine-glow)">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="5s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Rose side glow -->
+    <rect width="900" height="300" fill="url(#hh-rose-glow)">
+      <animate attributeName="opacity" values="0.5;0.9;0.5" dur="8s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- ═══════════ TECHNICAL GRID ═══════════ -->
+    <g stroke="#C77B9B" stroke-width="0.4" opacity="0.07">
+      <!-- Horizontal -->
+      <line x1="0"   y1="75"  x2="900" y2="75"/>
+      <line x1="0"   y1="150" x2="900" y2="150"/>
+      <line x1="0"   y1="225" x2="900" y2="225"/>
+      <!-- Vertical -->
+      <line x1="100" y1="0" x2="100" y2="300"/>
+      <line x1="200" y1="0" x2="200" y2="300"/>
+      <line x1="300" y1="0" x2="300" y2="300"/>
+      <line x1="450" y1="0" x2="450" y2="300"/>
+      <line x1="600" y1="0" x2="600" y2="300"/>
+      <line x1="700" y1="0" x2="700" y2="300"/>
+      <line x1="800" y1="0" x2="800" y2="300"/>
     </g>
 
-    <!-- === ORBITAL GEOMETRY === -->
-    <!-- Large orbit top-right -->
-    <ellipse cx="830" cy="60" rx="110" ry="70" fill="none"
-      stroke="#451126" stroke-width="0.9" opacity="0.5">
-      <animate attributeName="rx" values="110;120;110" dur="10s" repeatCount="indefinite"/>
+    <!-- ═══════════ ORBITAL GEOMETRY ═══════════ -->
+    <!-- Top-right large orbit -->
+    <ellipse cx="840" cy="55" rx="115" ry="68" fill="none" stroke="#451126" stroke-width="0.9" opacity="0.5">
+      <animate attributeName="rx" values="115;126;115" dur="11s" repeatCount="indefinite"/>
+      <animate attributeName="ry" values="68;75;68"    dur="11s" repeatCount="indefinite"/>
     </ellipse>
-    <ellipse cx="830" cy="60" rx="65" ry="42" fill="none"
-      stroke="#701A3D" stroke-width="0.6" opacity="0.35">
-      <animate attributeName="rx" values="65;72;65" dur="7s" repeatCount="indefinite"/>
+    <ellipse cx="840" cy="55" rx="68"  ry="40" fill="none" stroke="#701A3D" stroke-width="0.6" opacity="0.35">
+      <animate attributeName="rx" values="68;76;68" dur="7.5s" repeatCount="indefinite"/>
     </ellipse>
-    <!-- Accent dot on orbit -->
-    <circle cx="830" cy="18" r="3" fill="#C77B9B" opacity="0.7">
-      <animateTransform attributeName="transform" type="rotate"
-        from="0 830 60" to="360 830 60" dur="10s" repeatCount="indefinite"/>
+    <!-- Orbiting dot (top-right) -->
+    <circle r="2.5" fill="#C77B9B" opacity="0.8">
+      <animateMotion dur="11s" repeatCount="indefinite">
+        <mpath href="#hh-orbit-path-tr"/>
+      </animateMotion>
     </circle>
+    <path id="hh-orbit-path-tr" d="M 840 -13 a 115 68 0 1 1 -0.1 0 Z" fill="none"/>
 
-    <!-- Small orbit bottom-left -->
-    <ellipse cx="70" cy="265" rx="75" ry="48" fill="none"
-      stroke="#451126" stroke-width="0.7" opacity="0.4">
-      <animate attributeName="rx" values="75;83;75" dur="12s" repeatCount="indefinite"/>
+    <!-- Bottom-left orbit -->
+    <ellipse cx="65" cy="250" rx="80" ry="48" fill="none" stroke="#451126" stroke-width="0.7" opacity="0.4">
+      <animate attributeName="rx" values="80;88;80" dur="13s" repeatCount="indefinite"/>
     </ellipse>
-    <circle cx="70" cy="217" r="2" fill="#E5B5C7" opacity="0.5">
-      <animateTransform attributeName="transform" type="rotate"
-        from="0 70 265" to="-360 70 265" dur="12s" repeatCount="indefinite"/>
+    <!-- Orbiting dot (bottom-left) -->
+    <circle r="2" fill="#E5B5C7" opacity="0.6">
+      <animateMotion dur="13s" repeatCount="indefinite" keyPoints="0;1" keyTimes="0;1" calcMode="linear">
+        <mpath href="#hh-orbit-path-bl"/>
+      </animateMotion>
     </circle>
+    <path id="hh-orbit-path-bl" d="M 65 202 a 80 48 0 1 0 0.1 0 Z" fill="none"/>
 
-    <!-- === ANIMATED WAVE PATHS === -->
-    <path fill="none" stroke="#701A3D" stroke-width="1.2" opacity="0.45"
-      d="M -10 230 Q 120 190 250 215 T 510 195 T 780 210 T 920 185">
+    <!-- ═══════════ ANIMATED WAVE PATHS ═══════════ -->
+    <!-- Primary wave -->
+    <path fill="none" stroke="#701A3D" stroke-width="1.3" opacity="0.4"
+      d="M -10 220 C 80 200 180 230 300 210 S 500 190 650 215 S 820 205 920 195">
       <animate attributeName="d"
-        values="M -10 230 Q 120 190 250 215 T 510 195 T 780 210 T 920 185;
-                M -10 240 Q 120 200 250 225 T 510 205 T 780 220 T 920 195;
-                M -10 230 Q 120 190 250 215 T 510 195 T 780 210 T 920 185"
-        dur="8s" repeatCount="indefinite"/>
+        values="M -10 220 C 80 200 180 230 300 210 S 500 190 650 215 S 820 205 920 195;
+                M -10 232 C 80 212 180 242 300 222 S 500 202 650 227 S 820 217 920 207;
+                M -10 220 C 80 200 180 230 300 210 S 500 190 650 215 S 820 205 920 195"
+        dur="9s" repeatCount="indefinite"/>
     </path>
-    <path fill="none" stroke="#C77B9B" stroke-width="0.6" opacity="0.22"
-      d="M -10 265 Q 150 240 310 258 T 620 245 T 920 255">
+    <!-- Secondary wave -->
+    <path fill="none" stroke="#C77B9B" stroke-width="0.6" opacity="0.18"
+      d="M -10 258 C 100 240 220 265 370 252 S 580 240 750 260 S 870 248 920 255">
       <animate attributeName="d"
-        values="M -10 265 Q 150 240 310 258 T 620 245 T 920 255;
-                M -10 275 Q 150 250 310 268 T 620 255 T 920 265;
-                M -10 265 Q 150 240 310 258 T 620 245 T 920 255"
-        dur="11s" repeatCount="indefinite"/>
+        values="M -10 258 C 100 240 220 265 370 252 S 580 240 750 260 S 870 248 920 255;
+                M -10 270 C 100 252 220 277 370 264 S 580 252 750 272 S 870 260 920 267;
+                M -10 258 C 100 240 220 265 370 252 S 580 240 750 260 S 870 248 920 255"
+        dur="12s" repeatCount="indefinite"/>
     </path>
 
-    <!-- === CORNER DETAIL MARKS === -->
-    <g stroke="#701A3D" stroke-width="1" opacity="0.6" fill="none">
-      <polyline points="20,10 10,10 10,22"/>
-      <polyline points="880,10 890,10 890,22"/>
-      <polyline points="20,310 10,310 10,298"/>
-      <polyline points="880,310 890,310 890,298"/>
+    <!-- ═══════════ CORNER BRACKETS ═══════════ -->
+    <g stroke="#701A3D" stroke-width="1.2" fill="none" opacity="0.7">
+      <polyline points="22,8  8,8  8,24"/>
+      <polyline points="878,8 892,8 892,24"/>
+      <polyline points="22,292 8,292 8,276"/>
+      <polyline points="878,292 892,292 892,276"/>
     </g>
-    <circle cx="10"  cy="10"  r="2" fill="#C77B9B" opacity="0.5"/>
-    <circle cx="890" cy="10"  r="2" fill="#C77B9B" opacity="0.5"/>
-    <circle cx="10"  cy="310" r="2" fill="#C77B9B" opacity="0.5"/>
-    <circle cx="890" cy="310" r="2" fill="#C77B9B" opacity="0.5"/>
+    <circle cx="8"   cy="8"   r="2.5" fill="#C77B9B" opacity="0.6"/>
+    <circle cx="892" cy="8"   r="2.5" fill="#C77B9B" opacity="0.6"/>
+    <circle cx="8"   cy="292" r="2.5" fill="#C77B9B" opacity="0.6"/>
+    <circle cx="892" cy="292" r="2.5" fill="#C77B9B" opacity="0.6"/>
 
-    <!-- === GHOST TITLE (bloom layer) === -->
-    <text x="450" y="143" text-anchor="middle"
-      font-family="'Segoe UI',system-ui,sans-serif"
-      font-size="62" font-weight="900" letter-spacing="8"
-      fill="#C77B9B" opacity="0.12" filter="url(#hh-title-glow)">HARSHIT SINGH</text>
+    <!-- ═══════════ TITLE BLOOM (ghost layer) ═══════════ -->
+    <text x="450" y="138" text-anchor="middle"
+      font-family="'Segoe UI', system-ui, -apple-system, sans-serif"
+      font-size="64" font-weight="900" letter-spacing="7"
+      fill="#C77B9B" opacity="0.11" filter="url(#hh-bloom)">HARSHIT SINGH</text>
 
-    <!-- === MAIN TITLE === -->
-    <text x="450" y="143" text-anchor="middle"
-      font-family="'Segoe UI',system-ui,sans-serif"
-      font-size="62" font-weight="900" letter-spacing="8"
+    <!-- ═══════════ MAIN TITLE ═══════════ -->
+    <text x="450" y="138" text-anchor="middle"
+      font-family="'Segoe UI', system-ui, -apple-system, sans-serif"
+      font-size="64" font-weight="900" letter-spacing="7"
       fill="#F8F0F3">HARSHIT SINGH</text>
 
-    <!-- === GLOWING UNDERLINE === -->
-    <rect y="153" height="2" rx="1" fill="url(#hh-ul)" filter="url(#hh-glow)">
-      <animate attributeName="x"      values="180;155;180" dur="4s" repeatCount="indefinite"/>
-      <animate attributeName="width"  values="540;590;540" dur="4s" repeatCount="indefinite"/>
+    <!-- ═══════════ ANIMATED UNDERLINE ═══════════ -->
+    <!-- Glow layer -->
+    <rect x="175" y="148" width="550" height="2.5" rx="1.5"
+      fill="url(#hh-ul)" filter="url(#hh-glow-f)">
+      <animate attributeName="x"     values="175;148;175" dur="4.5s" repeatCount="indefinite"/>
+      <animate attributeName="width" values="550;604;550" dur="4.5s" repeatCount="indefinite"/>
     </rect>
-    <rect y="153" height="1.5" rx="1" fill="url(#hh-ul)" opacity="0.5">
-      <animate attributeName="x"      values="180;155;180" dur="4s" repeatCount="indefinite"/>
-      <animate attributeName="width"  values="540;590;540" dur="4s" repeatCount="indefinite"/>
+    <!-- Solid layer -->
+    <rect x="175" y="148" width="550" height="1.5" rx="1"
+      fill="url(#hh-ul)" opacity="0.7">
+      <animate attributeName="x"     values="175;148;175" dur="4.5s" repeatCount="indefinite"/>
+      <animate attributeName="width" values="550;604;550" dur="4.5s" repeatCount="indefinite"/>
     </rect>
 
-    <!-- === ROLE / SUBTITLE === -->
-    <text x="450" y="186" text-anchor="middle"
-      font-family="'Segoe UI',system-ui,sans-serif"
-      font-size="14.5" font-weight="400" letter-spacing="4.5"
-      fill="#C77B9B" opacity="0.9">
-      CSE Student  ·  Data Science Enthusiast  ·  AI / ML  ·  Python
-    </text>
+    <!-- ═══════════ SUBTITLE / ROLE ═══════════ -->
+    <text x="450" y="180" text-anchor="middle"
+      font-family="'Segoe UI', system-ui, -apple-system, sans-serif"
+      font-size="14" font-weight="400" letter-spacing="4"
+      fill="#C77B9B" opacity="0.92">CSE Student  ·  Data Science Enthusiast  ·  AI / ML  ·  Python</text>
 
-    <!-- === TAGLINE === -->
-    <text x="450" y="218" text-anchor="middle"
-      font-family="'Segoe UI',system-ui,sans-serif"
-      font-size="11.5" letter-spacing="2.5"
-      fill="#E5B5C7" opacity="0.5">
-      B.Tech Computer Science Engineering  ·  India 🇮🇳  ·  Open to Opportunities
-    </text>
+    <!-- ═══════════ TAGLINE ═══════════ -->
+    <text x="450" y="210" text-anchor="middle"
+      font-family="'Segoe UI', system-ui, -apple-system, sans-serif"
+      font-size="11" letter-spacing="2.5"
+      fill="#E5B5C7" opacity="0.48">B.Tech Computer Science Engineering  ·  India  ·  Open to Opportunities</text>
 
-    <!-- === MICRO DOTS ROW === -->
-    <g fill="#701A3D" opacity="0.6">
-      <circle cx="400" cy="244" r="2"/>
-      <circle cx="414" cy="244" r="1.5" opacity="0.5"/>
-      <circle cx="425" cy="244" r="1" opacity="0.3"/>
-      <circle cx="450" cy="244" r="2.5"/>
-      <circle cx="475" cy="244" r="1" opacity="0.3"/>
-      <circle cx="486" cy="244" r="1.5" opacity="0.5"/>
-      <circle cx="500" cy="244" r="2"/>
+    <!-- ═══════════ DECORATIVE DOTS ═══════════ -->
+    <g fill="#701A3D">
+      <circle cx="396" cy="234" r="1.5" opacity="0.7"/>
+      <circle cx="412" cy="234" r="1"   opacity="0.5"/>
+      <circle cx="425" cy="234" r="0.7" opacity="0.3"/>
+      <circle cx="450" cy="234" r="2"   opacity="0.8">
+        <animate attributeName="opacity" values="0.8;0.3;0.8" dur="3s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="475" cy="234" r="0.7" opacity="0.3"/>
+      <circle cx="488" cy="234" r="1"   opacity="0.5"/>
+      <circle cx="504" cy="234" r="1.5" opacity="0.7"/>
     </g>
 
   </g>
