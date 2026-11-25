@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" width="900" height="280" role="img" aria-label="Harshit Singh — Data Scientist · ML Engineer · AI/ML · Full-Stack · Python">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="hs-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10070C"/>
+      <stop offset="45%" stop-color="#190B12"/>
+      <stop offset="100%" stop-color="#10070C"/>
+    </linearGradient>
+    <!-- Animated glow gradient -->
+    <radialGradient id="hs-glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#701A3D" stop-opacity="0.5">
+        <animate attributeName="stop-opacity" values="0.5;0.9;0.5" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#10070C" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Moving light sweep -->
+    <linearGradient id="hs-sweep" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C77B9B" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#C77B9B" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#C77B9B" stop-opacity="0"/>
+      <animateTransform attributeName="gradientTransform" type="translate" from="-1 0" to="1 0" dur="5s" repeatCount="indefinite"/>
+    </linearGradient>
+    <!-- Underline glow -->
+    <filter id="hs-blur">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="hs-glow-filter">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <!-- Clip -->
+    <clipPath id="hs-clip"><rect width="900" height="280"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#hs-clip)">
+    <!-- Background -->
+    <rect width="900" height="280" fill="url(#hs-bg)"/>
+    <rect width="900" height="280" fill="url(#hs-glow)"/>
+    <rect width="900" height="280" fill="url(#hs-sweep)"/>
+
+    <!-- Technical grid -->
+    <g opacity="0.07" stroke="#C77B9B" stroke-width="0.5">
+      <!-- Vertical lines -->
+      <line x1="100" y1="0" x2="100" y2="280"/>
+      <line x1="200" y1="0" x2="200" y2="280"/>
+      <line x1="300" y1="0" x2="300" y2="280"/>
+      <line x1="400" y1="0" x2="400" y2="280"/>
+      <line x1="500" y1="0" x2="500" y2="280"/>
+      <line x1="600" y1="0" x2="600" y2="280"/>
+      <line x1="700" y1="0" x2="700" y2="280"/>
+      <line x1="800" y1="0" x2="800" y2="280"/>
+      <!-- Horizontal lines -->
+      <line x1="0" y1="70" x2="900" y2="70"/>
+      <line x1="0" y1="140" x2="900" y2="140"/>
+      <line x1="0" y1="210" x2="900" y2="210"/>
+    </g>
+
+    <!-- Orbital geometry — decorative circles -->
+    <circle cx="820" cy="50" r="80" fill="none" stroke="#451126" stroke-width="0.8" opacity="0.4">
+      <animate attributeName="r" values="80;90;80" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="820" cy="50" r="50" fill="none" stroke="#701A3D" stroke-width="0.5" opacity="0.3">
+      <animate attributeName="r" values="50;60;50" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="80" cy="230" r="60" fill="none" stroke="#451126" stroke-width="0.6" opacity="0.3">
+      <animate attributeName="r" values="60;72;60" dur="10s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Animated SVG path decoration -->
+    <path d="M 0 200 Q 150 160 300 180 T 600 160 T 900 150" fill="none" stroke="#701A3D" stroke-width="1" opacity="0.5">
+      <animate attributeName="d" values="M 0 200 Q 150 160 300 180 T 600 160 T 900 150;M 0 210 Q 150 170 300 190 T 600 150 T 900 165;M 0 200 Q 150 160 300 180 T 600 160 T 900 150" dur="7s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 0 240 Q 200 200 400 220 T 900 200" fill="none" stroke="#C77B9B" stroke-width="0.6" opacity="0.25">
+      <animate attributeName="d" values="M 0 240 Q 200 200 400 220 T 900 200;M 0 250 Q 200 210 400 230 T 900 210;M 0 240 Q 200 200 400 220 T 900 200" dur="9s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Main title: HARSHIT SINGH -->
+    <text x="450" y="118" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="58" font-weight="800" letter-spacing="6" fill="none" stroke="#E5B5C7" stroke-width="0.5" opacity="0.15">HARSHIT SINGH</text>
+    <text x="450" y="118" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="58" font-weight="800" letter-spacing="6" fill="#F8F0F3">HARSHIT SINGH</text>
+
+    <!-- Subtitle: role line -->
+    <text x="450" y="155" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="15" font-weight="400" letter-spacing="4" fill="#C77B9B" opacity="0.9">Data Scientist  ·  ML Engineer  ·  AI/ML  ·  Full-Stack  ·  Python</text>
+
+    <!-- Glowing underline -->
+    <rect x="200" y="165" width="500" height="1.5" rx="1" fill="#701A3D" filter="url(#hs-glow-filter)">
+      <animate attributeName="width" values="500;560;500" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="x" values="200;170;200" dur="4s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="200" y="165" width="500" height="1.5" rx="1" fill="#C77B9B" opacity="0.6">
+      <animate attributeName="width" values="500;560;500" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="x" values="200;170;200" dur="4s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Tagline -->
+    <text x="450" y="205" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" letter-spacing="2" fill="#E5B5C7" opacity="0.55">Engineering Student  ·  India  ·  Open to Opportunities</text>
+
+    <!-- Corner accent dots -->
+    <circle cx="30" cy="30" r="3" fill="#701A3D" opacity="0.7"/>
+    <circle cx="45" cy="30" r="2" fill="#C77B9B" opacity="0.4"/>
+    <circle cx="870" cy="250" r="3" fill="#701A3D" opacity="0.7"/>
+    <circle cx="855" cy="250" r="2" fill="#C77B9B" opacity="0.4"/>
+  </g>
+</svg>
