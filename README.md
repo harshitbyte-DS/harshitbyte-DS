@@ -21,7 +21,7 @@
 <a href="https://www.linkedin.com/in/harshit-singh-753aaa206"><img src="https://img.shields.io/badge/LINKEDIN-harshit--singh-6B1535?style=flat-square&logo=linkedin&logoColor=E5B5C7&labelColor=190B12"/></a>&nbsp;<a href="https://www.instagram.com/harshit.exe85"><img src="https://img.shields.io/badge/INSTAGRAM-harshit.exe85-6B1535?style=flat-square&logo=instagram&logoColor=E5B5C7&labelColor=190B12"/></a>&nbsp;<a href="https://github.com/harshitbyte-DS?tab=repositories"><img src="https://img.shields.io/badge/GITHUB-harshitbyte--DS-6B1535?style=flat-square&logo=github&logoColor=E5B5C7&labelColor=190B12"/></a>&nbsp;<a href="https://harshit-singh-portfolio-mu.vercel.app"><img src="https://img.shields.io/badge/PORTFOLIO-visit-451126?style=flat-square&logo=vercel&logoColor=E5B5C7&labelColor=190B12"/></a>
 </td>
 <td valign="top" align="center" width="32%">
-<img src="https://avatars.githubusercontent.com/u/289197222?v=4" width="160" alt="Harshit Singh"/>
+<img src="assets/harshit.jpg" width="160" alt="Harshit Singh"/>
 <br/><br/>
 <img src="https://img.shields.io/badge/📍 India-190B12?style=flat-square&logoColor=C77B9B"/><br/>
 <img src="https://img.shields.io/badge/🎓 B.Tech CSE-190B12?style=flat-square&logoColor=C77B9B"/><br/>
