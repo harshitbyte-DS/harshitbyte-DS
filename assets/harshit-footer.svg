@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 80" width="900" height="80"
+  role="img" aria-label="Footer — Build · Learn · Innovate">
+  <defs>
+    <linearGradient id="hf-bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#10070C"/>
+      <stop offset="50%"  stop-color="#190B12"/>
+      <stop offset="100%" stop-color="#10070C"/>
+    </linearGradient>
+    <!-- Animated line gradient -->
+    <linearGradient id="hf-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#10070C" stop-opacity="0"/>
+      <stop offset="30%"  stop-color="#C77B9B" stop-opacity="0.6"/>
+      <stop offset="50%"  stop-color="#E5B5C7" stop-opacity="1"/>
+      <stop offset="70%"  stop-color="#C77B9B" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#10070C" stop-opacity="0"/>
+      <animateTransform attributeName="gradientTransform" type="translate"
+        from="-0.5 0" to="0.5 0" dur="5s" repeatCount="indefinite"/>
+    </linearGradient>
+    <!-- Dot pulse -->
+    <radialGradient id="hf-dot">
+      <stop offset="0%"   stop-color="#E5B5C7"/>
+      <stop offset="100%" stop-color="#701A3D"/>
+    </radialGradient>
+    <clipPath id="hf-clip"><rect width="900" height="80"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#hf-clip)">
+    <rect width="900" height="80" fill="url(#hf-bg)"/>
+
+    <!-- Top rule -->
+    <rect x="80" y="14" width="740" height="1" fill="url(#hf-line)"/>
+
+    <!-- Orbital accent -->
+    <circle cx="450" cy="47" r="30" fill="none" stroke="#451126" stroke-width="0.6" opacity="0.4">
+      <animate attributeName="r" values="30;34;30" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="450" cy="17" r="2" fill="url(#hf-dot)" opacity="0.8">
+      <animateTransform attributeName="transform" type="rotate"
+        from="0 450 47" to="360 450 47" dur="6s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Corner geometry -->
+    <g stroke="#701A3D" stroke-width="0.8" fill="none" opacity="0.5">
+      <polyline points="82,14 80,14 80,16"/>
+      <polyline points="818,14 820,14 820,16"/>
+      <polyline points="82,66 80,66 80,64"/>
+      <polyline points="818,66 820,66 820,64"/>
+    </g>
+
+    <!-- BUILD · LEARN · INNOVATE -->
+    <text x="450" y="51" text-anchor="middle"
+      font-family="'Segoe UI',system-ui,sans-serif"
+      font-size="13" font-weight="600" letter-spacing="8"
+      fill="#C77B9B" opacity="0.85">BUILD  ·  LEARN  ·  INNOVATE</text>
+
+    <!-- Bottom rule -->
+    <rect x="80" y="65" width="740" height="1" fill="url(#hf-line)"/>
+  </g>
+</svg>
