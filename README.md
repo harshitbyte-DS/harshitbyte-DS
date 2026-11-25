@@ -72,10 +72,10 @@
 <a href="https://github.com/harshitbyte-DS/Charkravyuh"><img src="https://img.shields.io/badge/VIEW_REPO-6B1535?style=flat-square&logo=github&logoColor=E5B5C7"/></a>
 </td>
 <td bgcolor="#0F060C" width="50%">
-<font color="#C77B9B" size="2"><strong>MARKETPLACE · TYPESCRIPT · TRUST ENGINE</strong></font><br/><br/>
+<font color="#C77B9B" size="2"><strong>INTERNSHIP PROJECT · TYPESCRIPT · REACT · EXPRESS · POSTGRES</strong></font><br/><br/>
 <font color="#F8F0F3"><strong>🛡️ TrustNest</strong></font><br/>
-<font color="#E5B5C7">Verified Marketplace & Trust Engine — TypeScript-powered verification layer addressing authenticity in digital commerce.</font><br/><br/>
-<a href="https://github.com/harshitbyte-DS/TrustNest"><img src="https://img.shields.io/badge/VIEW_REPO-6B1535?style=flat-square&logo=github&logoColor=E5B5C7"/></a>
+<font color="#E5B5C7">Verified Marketplace & Trust Engine built during internship — enforces a 5-dimension verification pipeline (Identity, Documents, Location, Media & Fraud Risk) with React 19, Express 5, JWT auth, and SQLite/PostgreSQL.</font><br/><br/>
+<a href="https://github.com/harshitbyte-DS/TrustNest"><img src="https://img.shields.io/badge/VIEW_REPO-6B1535?style=flat-square&logo=github&logoColor=E5B5C7"/></a>&nbsp;<a href="https://rajgahoi.github.io/trustnest/"><img src="https://img.shields.io/badge/LIVE_DEMO-451126?style=flat-square&logo=github&logoColor=E5B5C7"/></a>
 </td>
 </tr>
 <tr>
@@ -124,11 +124,13 @@
 </tr>
 <tr>
 <td bgcolor="#0F060C" width="50%" valign="top">
-<font color="#6B1535" size="2"><strong>#03 &nbsp;BACKEND & INFRASTRUCTURE</strong></font><br/><br/>
+<font color="#6B1535" size="2"><strong>#03 &nbsp;BACKEND, WEB & INFRASTRUCTURE</strong></font><br/><br/>
 <img src="https://img.shields.io/badge/FastAPI-190B12?style=flat-square&logo=fastapi&logoColor=C77B9B"/>
-<img src="https://img.shields.io/badge/Docker-190B12?style=flat-square&logo=docker&logoColor=C77B9B"/>
+<img src="https://img.shields.io/badge/Express-190B12?style=flat-square&logo=express&logoColor=C77B9B"/>
+<img src="https://img.shields.io/badge/React-190B12?style=flat-square&logo=react&logoColor=C77B9B"/>
+<img src="https://img.shields.io/badge/PostgreSQL-190B12?style=flat-square&logo=postgresql&logoColor=C77B9B"/>
 <img src="https://img.shields.io/badge/SQLite-190B12?style=flat-square&logo=sqlite&logoColor=C77B9B"/>
-<img src="https://img.shields.io/badge/SQL-190B12?style=flat-square&logo=postgresql&logoColor=C77B9B"/>
+<img src="https://img.shields.io/badge/Docker-190B12?style=flat-square&logo=docker&logoColor=C77B9B"/>
 </td>
 <td bgcolor="#0F060C" width="50%" valign="top">
 <font color="#6B1535" size="2"><strong>#04 &nbsp;TOOLS & FUNDAMENTALS</strong></font><br/><br/>
